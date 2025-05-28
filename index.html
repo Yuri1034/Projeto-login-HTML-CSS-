@@ -27,5 +27,22 @@
     <button>enviar</button> 
     <a class="esqueci" href="#">esqueci minha senha</a>
        </div>
+    <script>
+        var email = document.getElementById('email');
+        var password = document.getElementById('password');
+        
+        email.addEventListener('focus',()=>{
+            email.style.borderColor = "#4A5f6A";
+        });    
+        email.addEventListener('blur',()=>{
+            email.style.bordercolor = "#ccc";
+        });    
+            password.addEventListener('focus',()=>{
+            password.style.borderColor = "#4A5f6A";
+        });    
+        password.addEventListener('blur',()=>{
+            password.style.bordercolor = "#ccc";
+        });    
+       </script>
 </body>
 </html>
